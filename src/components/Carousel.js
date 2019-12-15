@@ -7,30 +7,74 @@ import {
   CarouselCaption
 } from 'reactstrap';
 import styled from 'styled-components';
-import planets from "./imgs/planets.png";
-import rps from "./imgs/rps.png";
-import bookr from "./imgs/bookr.png";
-import cities from "./imgs/cities.png";
+import jar from "./imgs/blendermodels/jar.png"
+import cathedralinside from "./imgs/blendermodels/cathedralinside.png"
+import cathedraloutside from "./imgs/blendermodels/cathedraloutside.png"
+import spray from "./imgs/blendermodels/spray.png"
+import chess from "./imgs/blendermodels/chess.png"
+import lolly from "./imgs/blendermodels/lolly.png"
+import corn from "./imgs/blendermodels/corn.png"
+import cafe from "./imgs/blendermodels/cafe.png"
+import donut from "./imgs/blendermodels/donut.png"
+import snes from "./imgs/blendermodels/snes.png"
+import entry from "./imgs/blendermodels/entry.png"
+
+
 
 
 const items = [
   {
-    src: planets,
+    src: jar,
     // altText: 'Slide 1',
     // caption: 'Slide 1'
   },
   {
-    src: rps,
+    src: cathedralinside,
     // altText: 'Slide 2',
     // caption: 'Slide 2'
   },
   {
-    src: bookr,
+    src: cathedraloutside,
     // altText: 'Slide 3',
     // caption: 'Slide 3'
   },
   {
-    src: cities,
+    src: spray,
+    // altText: 'Slide 4',
+    // caption: 'Slide 4'
+  },
+  {
+    src: lolly,
+    // altText: 'Slide 4',
+    // caption: 'Slide 4'
+  },
+  {
+    src: corn,
+    // altText: 'Slide 4',
+    // caption: 'Slide 4'
+  },
+  {
+    src: chess,
+    // altText: 'Slide 4',
+    // caption: 'Slide 4'
+  },
+  {
+    src: cafe,
+    // altText: 'Slide 4',
+    // caption: 'Slide 4'
+  },
+  {
+    src: donut,
+    // altText: 'Slide 4',
+    // caption: 'Slide 4'
+  },
+  {
+    src: snes,
+    // altText: 'Slide 4',
+    // caption: 'Slide 4'
+  },
+  {
+    src: entry,
     // altText: 'Slide 4',
     // caption: 'Slide 4'
   }
@@ -38,11 +82,15 @@ const items = [
 
 const CaroDiv = styled.div`
     margin: 4%;
-    background: black;
+    // background: black;
+`;
+
+const Link = styled.a`
+  margin: 4%;
 `;
 
 
-const Projects = (props) => {
+const Carousel2= (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -78,20 +126,24 @@ const Projects = (props) => {
   });
 
   return (
-    <CaroDiv>
-        <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-        
-        >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-        </Carousel>
-    </CaroDiv>
+    <div>
+      <Link href="https://www.artstation.com/alexandercsierra" target="_blank"><h1>3D Models</h1></Link>
+      <CaroDiv>
+          <Carousel
+          activeIndex={activeIndex}
+          next={next}
+          previous={previous}
+          
+          >
+          <CarouselIndicators id="arrow" items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+          {slides}
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+          </Carousel>
+      </CaroDiv>
+      <Link href="https://www.artstation.com/alexandercsierra" target="_blank">Artstation Profile</Link>
+    </div>
   );
 }
 
-// export default Projects;
+export default Carousel2;

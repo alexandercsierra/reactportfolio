@@ -5,12 +5,17 @@ import planets from "./imgs/planets.png";
 import rps from "./imgs/rps.png";
 import bookr from "./imgs/bookr.png";
 import cities from "./imgs/cities.png";
+import Carousel from "./Carousel"
 
 
 let CardDiv = styled.div`
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
+    margin: 4%;
+`;
+
+let Title = styled.h1`
     margin: 4%;
 `;
 
@@ -57,13 +62,18 @@ let arr = Object.values(obj);
 
 
 let cards = arr.map(proj => {
-    return(<Card style = {{margin: "4%"}} letter = {proj.letter} title = {proj.title} img={proj.image} desc = {proj.desc} key={proj.title} url={proj.url}/>)
+    return(<Card style = {{margin: "4%"}} letter = {proj.letter} title = {proj.title} img={proj.image} desc = {proj.desc} key={proj.title} url={proj.url} repo = {proj.repo}/>)
 })
 
     return (
-        <CardDiv>
-            {cards}
-        </CardDiv>
+        <div>
+            <Title>Projects</Title>
+            <CardDiv>
+                {cards}
+            </CardDiv>
+            <Carousel />
+        </div>
+        
     )
 };
 

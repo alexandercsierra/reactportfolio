@@ -20,10 +20,14 @@ let SkillsContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 60vh;
+    width: 70%;
+    margin: 0 auto;
 `;
 
 let SkillDiv = styled.div`
     margin: 4%;
+    width: 25%;
 `;
 
 let Title = styled.h1`
@@ -35,7 +39,7 @@ const Skills = () => {
     return (
         <div>
             <Title>Skills</Title>
-            <SkillsContainer style={{height: "80vh"}}>
+            <SkillsContainer>
                 <SkillDiv>
                     <h2>HTML5</h2>
                     <Icon className="fab fa-html5" style={{color: "#df4b25"}}></Icon>

@@ -8,6 +8,7 @@ import Projects from "./components/Projects"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"
 
+
 function App() {
   const [value, setValue] = React.useState(0);
 

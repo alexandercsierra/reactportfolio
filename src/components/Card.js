@@ -57,7 +57,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function Projects(props) {
-  const {title, img, desc, letter, url} = props;
+  const {title, img, desc, letter, url, repo} = props;
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -99,7 +99,7 @@ export default function Projects(props) {
           {/* <Icon className="fab fa-html5" style={{color: "#df4b25"}}></Icon>
           <Icon className="fab fa-css3-alt" style={{color: "#1e5fa9"}}></Icon>
           <Icon className="fab fa-js" style={{color: "#e9d54d"}}></Icon> */}
-          <a href="https://github.com/alexandercsierra"><Icon className="fab fa-github-square" style={{color: "#24292e"}}></Icon></a>
+          <a href={repo} target="_blank"><Icon className="fab fa-github-square"  style={{color: "#24292e"}}></Icon></a>
         </IconButton>
         {/* <IconButton aria-label="share">
           <ShareIcon />
