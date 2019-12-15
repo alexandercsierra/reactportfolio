@@ -12,7 +12,6 @@ let CardDiv = styled.div`
     justify-content:center;
     flex-wrap: wrap;
     margin: 4%;
-    // height: 80vh;
 `;
 
 const Projects = () => {

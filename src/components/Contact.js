@@ -1,94 +1,54 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import styled from "styled-components";
-import img from "./imgs/blacksand.jpg"
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import {faCube, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { dom } from '@fortawesome/fontawesome-svg-core'
+dom.watch()
 
-let FormDiv = styled.div`
-    width: 50%;
-    height: 80vh;
-    margin: 4% auto;
-    text-align: left;
-    background-image: url(img);
+ 
+library.add(faGithubSquare, faLinkedin, faEnvelope)
+
+let Icon = styled.svg`
+    font-size: 7rem;
+    margin: 0 2%;
 `;
 
-const Contact = (props) => {
+let ContactsDiv = styled.div`
+  margin: 4% auto;
+  display: flex;
+  justify-content: center;
+`;
+
+let Contacts = styled.div`
+  margin: 0 2%;
+`;
+
+
+
+export default function Contact(props) {
+
+
   return (
-    <FormDiv>
-        <Form>
-      <FormGroup>
-        <Label for="exampleEmail">Name</Label>
-        <Input type="type" name="email" id="exampleEmail" placeholder="name" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="examplePassword">Subject</Label>
-        <Input type="text" name="password" id="examplePassword" placeholder="subject" />
-      </FormGroup>
-      {/* <FormGroup>
-        <Label for="exampleSelect">Select</Label>
-        <Input type="select" name="select" id="exampleSelect">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </Input>
-      </FormGroup> */}
-      {/* <FormGroup>
-        <Label for="exampleSelectMulti">Select Multiple</Label>
-        <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </Input>
-      </FormGroup> */}
-      <FormGroup>
-        <Label for="exampleText">Text Area</Label>
-        <Input type="textarea" name="text" id="exampleText" />
-      </FormGroup>
-      {/* <FormGroup>
-        <Label for="exampleFile">File</Label>
-        <Input type="file" name="file" id="exampleFile" />
-        <FormText color="muted">
-          This is some placeholder block-level help text for the above input.
-          It's a bit lighter and easily wraps to a new line.
-        </FormText>
-      </FormGroup> */}
-      {/* <FormGroup tag="fieldset">
-        <legend>Radio Buttons</legend>
-        <FormGroup check>
-          <Label check>
-            <Input type="radio" name="radio1" />{' '}
-            Option one is this and that—be sure to include why it's great
-          </Label>
-        </FormGroup>
-        <FormGroup check>
-          <Label check>
-            <Input type="radio" name="radio1" />{' '}
-            Option two can be something else and selecting it will deselect option one
-          </Label>
-        </FormGroup>
-        <FormGroup check disabled>
-          <Label check>
-            <Input type="radio" name="radio1" disabled />{' '}
-            Option three is disabled
-          </Label>
-        </FormGroup>
-      </FormGroup> */}
-      {/* <FormGroup check>
-        <Label check>
-          <Input type="checkbox" />{' '}
-          Check me out
-        </Label>
-      </FormGroup> */}
-      <Button onClick = {(e) => {
-          e.preventDefault();
-          console.log("clicked");
-      }}>Submit</Button>
-    </Form>
-    </FormDiv>
+    <ContactsDiv>
+      <Contacts>
+        <h2>Email</h2>
+        <a href="mailto:alexandercsierra@gmail.com" target="_blank"><Icon className="fas fa-envelope" style={{color: "#c23b2c"}}></Icon></a>
+        {/* <h3 style={{fontSize: "1rem"}}>alexandercsierra@gmail.com</h3> */}
+      </Contacts>
+      <Contacts>
+        <h2>LinkedIn</h2>
+        <a href="https://www.linkedin.com/in/alexander-sierra-b7519673/" target="_blank"><Icon className="fab fa-linkedin" style={{color: "#0077b5"}}></Icon></a>
+      </Contacts>
+      <Contacts>
+        <h2>GitHub</h2>
+        <a href="https://github.com/alexandercsierra" target="_blank"><Icon className="fab fa-github-square" style={{color: "#24292e"}}></Icon></a>
+      </Contacts>
+      
+      
+      
+    </ContactsDiv>
+    
   );
 }
-
-export default Contact;

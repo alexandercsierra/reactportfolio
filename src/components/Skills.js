@@ -5,6 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faHtml5, faCss3Alt, faJs, faReact, faLess} from '@fortawesome/free-brands-svg-icons'
 import {faCube} from '@fortawesome/free-solid-svg-icons'
 import { dom } from '@fortawesome/fontawesome-svg-core'
+import blender from './imgs/blender.png'
 dom.watch()
 
  
@@ -57,7 +58,8 @@ const Skills = () => {
                 </SkillDiv>
                 <SkillDiv>
                     <h2>Blender</h2>
-                    <Icon className="fas fa-cube" style={{color: "#39ad60"}}></Icon>
+                    {/* <Icon className="fas fa-cube" style={{color: "#39ad60"}}></Icon> */}
+                    <img src={blender} style={{width: "90px", marginTop: "-5px"}}></img>
                 </SkillDiv>
             </SkillsContainer>
         </div>
