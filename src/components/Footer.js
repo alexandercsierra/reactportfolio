@@ -3,10 +3,21 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faHtml5, faCss3Alt, faJs, faReact, faGithubSquare} from '@fortawesome/free-brands-svg-icons'
+import {faCube} from '@fortawesome/free-solid-svg-icons'
+import { dom } from '@fortawesome/fontawesome-svg-core'
+dom.watch()
+
+ 
+library.add(faHtml5, faCss3Alt, faJs, faCube, faReact)
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
+    marginTop: "20%"
   },
 });
 
@@ -30,8 +41,8 @@ export default function Footer(props) {
         >
             <Tab 
                 style={{color: "white"}}
-                label="Home" />
-            <Tab 
+                label="Copyright 2019 Alexander Sierra" />
+            {/* <Tab 
                 style={{color: "white"}}
                 label="Skills" />
             <Tab 
@@ -39,7 +50,7 @@ export default function Footer(props) {
                 label="Projects" />
             <Tab 
                 style={{color: "white"}}
-                label="Contact" />
+                label="Contact" /> */}
         </Tabs>
         </Paper>
     );
