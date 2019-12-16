@@ -82,7 +82,7 @@ export default function Projects(props) {
         title={title}
         // subheader="September 14, 2016"
       />
-      <a href={url}>
+      <a href={url} target="_blank">
       <CardMedia
         className={classes.media}
         image={img}

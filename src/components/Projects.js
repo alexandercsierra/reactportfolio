@@ -6,6 +6,8 @@ import rps from "./imgs/rps.png";
 import bookr from "./imgs/bookr.png";
 import cities from "./imgs/cities.png";
 import Carousel from "./Carousel"
+import heroku from "./imgs/heroku.png";
+import zingers from "./imgs/zingers.png"
 
 
 let CardDiv = styled.div`
@@ -54,7 +56,24 @@ let obj = {
         desc: "Users try to guess which states contain a city which shares the same consonants as it's state name.",
         repo: "https://github.com/alexandercsierra/citiesByConsonant",
         url: "https://alexandercsierra.github.io/cities/index.html"
+    },
+    ggapi: {
+        letter: "G",
+        title: "Golden Girls API",
+        image: heroku,
+        desc: "A simple API that will provide randomized quotes from The Golden Girls",
+        repo: "https://github.com/alexandercsierra/goldenGirlsAPI",
+        url: "https://golden-girls-api.herokuapp.com/"
+    },
+    zingers: {
+        letter: "Z",
+        title: "Zbornak Zingers",
+        image: zingers,
+        desc: "A web app built in React, which will pull quotes from the Golden Girls API and display them in cards",
+        repo: "https://github.com/alexandercsierra/zbornakzingersreact",
+        url: "https://zbornakzingers.netlify.com/"
     }
+
 }
 
 let arr = Object.values(obj);
