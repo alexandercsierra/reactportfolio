@@ -23,6 +23,9 @@ const useStyles = makeStyles({
     },
     ['@media (max-width:450px)']: { // eslint-disable-line no-useless-computed-key
         marginTop: "110%"
+    },
+    ['@media (max-width:270px)']: { // eslint-disable-line no-useless-computed-key
+        marginTop: "200%"
     }
   },
 });

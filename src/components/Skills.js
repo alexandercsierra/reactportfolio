@@ -41,10 +41,14 @@ let Title = styled.h1`
     margin: 4% auto;
 `;
 
+let Container = styled.h1`
+    margin: 4% auto;
+`;
+
 
 const Skills = () => {
     return (
-        <div>
+        <Container>
             <Title>Skills</Title>
             <SkillsContainer>
                 <SkillDiv>
@@ -73,7 +77,7 @@ const Skills = () => {
                     <img src={blender} style={{width: "90px", marginTop: "-5px"}}></img>
                 </SkillDiv>
             </SkillsContainer>
-        </div>
+        </Container>
     )
 }
 
