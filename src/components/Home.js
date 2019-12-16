@@ -24,6 +24,12 @@ const Banner = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media (max-width: 570px){
+        height: 50vh;
+     }
+     @media (max-width: 420px){
+        height: 30vh; 
+     }
 
 `;
 
@@ -33,17 +39,34 @@ const Name = styled.h1`
     letter-spacing: 1.5;
     margin-top: 15%;
     margin-bottom: 1%;
+    @media (max-width: 1100px){
+        font-size: 3rem; 
+        margin-top: 20%;
+     }
+     @media (max-width: 570px){
+        font-size: 2.5rem; 
+     }
+     @media (max-width: 420px){
+        font-size: 2rem; 
+     }
 `;
 
 const Title = styled.p`
     color: white;
     font-size: 1.5rem;
     margin: 0;
+    @media (max-width: 570px){
+        font-size: 1.25rem; 
+     }
 `;
 
 const AboutDiv = styled.div`
     margin: 4% auto;
     width: 1100px;
+    @media (max-width: 1100px){
+       width: 90%; 
+    //    flex-direction: column;
+    }
 
 `;
 
@@ -53,9 +76,10 @@ const Profile = styled.img`
 
 const ProfileDiv = styled.div`
     display: flex;
-    // justify-content: center;
     width: 40%;
-    // border: 1px solid red;
+    @media (max-width: 1100px){
+        width: 50%; 
+     }
 `;
 
 const TextDiv = styled.div`
@@ -65,6 +89,9 @@ const TextDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1100px){
+        width: 90%; 
+     }
 `;
 
 let Icon = styled.svg`
@@ -83,6 +110,8 @@ let IconDiv = styled.div`
 
 let Container = styled.div`
     margin: 0 auto;
+    // width: 25%
+    // border: 1px solid red;
 `;
 
 
@@ -94,12 +123,15 @@ const useStyles = makeStyles(theme => ({
       display: "flex",
       justifyContent: "space-between",
       ['@media (max-width:1150px)']: { // eslint-disable-line no-useless-computed-key
-        margin: "0 50% 0 50%",
-        position: "relative",
+        // margin: "0 50% 0 50%",
+        // position: "relative",
         flexDirection: "column",
         alignItems: "center",
-        width: "50%"
+        width: "90%"
         // width: "900px"
+      },
+      ['@media (max-width:420px)']: { // eslint-disable-line no-useless-computed-key
+        width: "98%"
       }
     },
   }));

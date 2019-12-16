@@ -24,54 +24,54 @@ export default function Nav(props) {
     };
 
     return (
-        // <Paper className={classes.root}>
-        // <Tabs
-        //     value={value}
-        //     onChange={handleChange}
-        //     indicatorColor="primary"
-        //     textColor="primary"
-        //     centered
-        // >
-        //     <Tab label="Home" />
-        //     <Tab label="Skills" />
-        //     <Tab label="Projects" />
-        //     <Tab label="Contact" />
-        // </Tabs>
-        // </Paper>
-        <BrowserRouter>
-            <Paper className={classes.root}>
-            <Route path="/" render={({ location }) => (
-                <Fragment>
-                    <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    indicatorColor="primary"
-                    textColor="primary"
-                    centered>
-                        <Tab label="Home" component={Link} to="/"/>
-                        <Tab label="Skills" component={Link} to="/skills"/>
-                        <Tab label="Projects" component={Link} to="/projects"/>
-                        <Tab label="Contact" component={Link} to="/contact"/>
-                    </Tabs>
-                    <Switch>
-                        <Route path="/" render={() => Home} />
-                        <Route path="/skills" render={() => Skills} />
-                        <Route path="/projects" render={() => Projects} />
-                        <Route path="/contact" render={() => Contact} />
+        <Paper className={classes.root}>
+        <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="primary"
+            centered
+        >
+            <Tab label="Home" />
+            <Tab label="Skills" />
+            <Tab label="Projects" />
+            <Tab label="Contact" />
+        </Tabs>
+        </Paper>
+        // <BrowserRouter>
+        //     <Paper className={classes.root}>
+        //     <Route path="/" render={({ location }) => (
+        //         <Fragment>
+        //             <Tabs
+        //             value={value}
+        //             onChange={handleChange}
+        //             indicatorColor="primary"
+        //             textColor="primary"
+        //             centered>
+        //                 <Tab label="Home" component={Link} to="/"/>
+        //                 <Tab label="Skills" component={Link} to="/skills"/>
+        //                 <Tab label="Projects" component={Link} to="/projects"/>
+        //                 <Tab label="Contact" component={Link} to="/contact"/>
+        //             </Tabs>
+        //             <Switch>
+        //                 <Route path="/" render={() => Home} />
+        //                 <Route path="/skills" render={() => Skills} />
+        //                 <Route path="/projects" render={() => Projects} />
+        //                 <Route path="/contact" render={() => Contact} />
                         
-                    </Switch>
+        //             </Switch>
 
-                </Fragment>
-
-
+        //         </Fragment>
 
 
 
 
-            )}/>
+
+
+        //     )}/>
             
-            </Paper>
-        </BrowserRouter>
+        //     </Paper>
+        // </BrowserRouter>
 
 
 
