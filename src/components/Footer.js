@@ -20,7 +20,10 @@ const useStyles = makeStyles({
     marginTop: "20%",
     ['@media (max-width:650px)']: { // eslint-disable-line no-useless-computed-key
         marginTop: "80%"
-      }
+    },
+    ['@media (max-width:450px)']: { // eslint-disable-line no-useless-computed-key
+        marginTop: "110%"
+    }
   },
 });
 

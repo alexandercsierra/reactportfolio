@@ -76,11 +76,11 @@ export default function Projects(props) {
         }
         action={
           <IconButton aria-label="settings">
-            <MoreVertIcon />
+            {/* <MoreVertIcon /> */}
           </IconButton>
         }
         title={title}
-        subheader="September 14, 2016"
+        // subheader="September 14, 2016"
       />
       <a href={url}>
       <CardMedia

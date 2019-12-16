@@ -48,6 +48,7 @@ const Name = styled.h1`
      }
      @media (max-width: 420px){
         font-size: 2rem; 
+        margin-top: 10%;
      }
 `;
 
