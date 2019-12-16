@@ -23,11 +23,18 @@ let SkillsContainer = styled.div`
     height: 60vh;
     width: 70%;
     margin: 0 auto;
+    
 `;
 
 let SkillDiv = styled.div`
     margin: 4%;
     width: 25%;
+    @media (max-width: 870px){
+        width: 30%;
+    };
+    @media (max-width: 650px){
+        width: 50%
+    }
 `;
 
 let Title = styled.h1`

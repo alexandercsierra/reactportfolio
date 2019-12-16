@@ -17,7 +17,10 @@ library.add(faHtml5, faCss3Alt, faJs, faCube, faReact)
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    marginTop: "20%"
+    marginTop: "20%",
+    ['@media (max-width:650px)']: { // eslint-disable-line no-useless-computed-key
+        marginTop: "80%"
+      }
   },
 });
 
