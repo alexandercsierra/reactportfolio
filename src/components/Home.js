@@ -62,21 +62,28 @@ const Title = styled.p`
 `;
 
 const AboutDiv = styled.div`
+    // border: 1px solid red;
     margin: 4% auto;
-    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
     @media (max-width: 1100px){
        width: 90%; 
-    //    flex-direction: column;
+       flex-direction: column;
     }
+
 
 `;
 
 const Profile = styled.img`
-    // width: 100%;
+    width: 100%;
 `;
 
 const ProfileDiv = styled.div`
     display: flex;
+    justify-content: center;
     width: 40%;
     @media (max-width: 1100px){
         width: 50%; 
@@ -117,31 +124,31 @@ let Container = styled.div`
 `;
 
 
-const useStyles = makeStyles(theme => ({
-    root: {
-      padding: theme.spacing(3, 2),
-      margin: "0 auto",
-      boxShadow: "3px 3px 8px 1px rgb(17, 17, 17)",
-      display: "flex",
-      justifyContent: "space-between",
-      ['@media (max-width:1150px)']: { // eslint-disable-line no-useless-computed-key
-        // margin: "0 50% 0 50%",
-        // position: "relative",
-        flexDirection: "column",
-        alignItems: "center",
-        width: "90%"
-        // width: "900px"
-      },
-      ['@media (max-width:420px)']: { // eslint-disable-line no-useless-computed-key
-        width: "98%"
-      }
-    },
-  }));
+// const useStyles = makeStyles(theme => ({
+//     root: {
+//       padding: theme.spacing(3, 2),
+//       margin: "0 auto",
+//       boxShadow: "3px 3px 8px 1px rgb(17, 17, 17)",
+//       display: "flex",
+//       justifyContent: "space-between",
+//       ['@media (max-width:1150px)']: { // eslint-disable-line no-useless-computed-key
+//         // margin: "0 50% 0 50%",
+//         // position: "relative",
+//         flexDirection: "column",
+//         alignItems: "center",
+//         width: "90%"
+//         // width: "900px"
+//       },
+//       ['@media (max-width:420px)']: { // eslint-disable-line no-useless-computed-key
+//         width: "98%"
+//       }
+//     },
+//   }));
 
 
 
 const Home = () => {
-    const classes = useStyles();
+    // const classes = useStyles();
     return (
         <Container>
             <Banner>
@@ -149,10 +156,22 @@ const Home = () => {
                 <Title>Full Stack Web Developer</Title>
             </Banner>
             <AboutDiv>
-                <Paper className={classes.root} >
                     <ProfileDiv>
                         <Profile src={profile}></Profile>
                     </ProfileDiv>
+                    <TextDiv>
+                        <h5 >
+                            About Me
+                        </h5>
+                        <p style={{textAlign: "left"}}><br></br>I come from a pre-med background (holding a B.S. in Health Sciences), currently working hard to transition into web development. Above all else, I love learning new things, and there is certainly no shortage of that in the development world. My learning is currently taking place at Lambda School, where I am also employed as a Team Lead.<br></br><br></br> I find it so satisfying to have a problem, research the solution, then be able to immediately apply my new knowledge to fix a problem I couldn't solve 5 minutes ago. When not developing, I can be found playing trumpet in my community band, or frolicking in the snow. 
+                        </p>
+                        <IconDiv>
+                            <a href="https://www.linkedin.com/in/alexander-sierra-b7519673/" target="_blank"><Icon className="fab fa-linkedin"></Icon></a>
+                            <a href="https://github.com/alexandercsierra" target="_blank"><Icon className="fab fa-github-square" style={{color: "#24292e"}}></Icon></a>
+                        </IconDiv>
+                    </TextDiv>
+                {/* <Paper className={classes.root} >
+                    
                     <TextDiv>
                         <Typography variant="h5" component="h3" >
                             About Me
@@ -163,8 +182,8 @@ const Home = () => {
                             <a href="https://www.linkedin.com/in/alexander-sierra-b7519673/" target="_blank"><Icon className="fab fa-linkedin"></Icon></a>
                             <a href="https://github.com/alexandercsierra" target="_blank"><Icon className="fab fa-github-square" style={{color: "#24292e"}}></Icon></a>
                         </IconDiv>
-                    </TextDiv>
-                </Paper>
+                    </TextDiv> */}
+                {/* </Paper> */}
             </AboutDiv>
         </Container>
     )

@@ -85,6 +85,7 @@ const CaroDiv = styled.div`
     width: 60%;
     display: flex;
     justify-content: center;
+    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
     // background: black;
     @media (max-width: 750px){
       width: 85%;

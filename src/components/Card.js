@@ -36,7 +36,8 @@ const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345,
     margin: "1%",
-    boxShadow: "3px 3px 8px 1px rgb(17, 17, 17)"
+    // boxShadow: "3px 3px 8px 1px rgb(17, 17, 17)"
+    boxShadow: "0.3em 0.3em 1em rgba(0,0,0,0.3)"
   },
   media: {
     height: 0,
