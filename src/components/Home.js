@@ -157,7 +157,7 @@ const Home = () => {
                         <Typography variant="h5" component="h3" >
                             About Me
                         </Typography>
-                        <Typography component="p" style={{textAlign: "left"}}><br></br>Although I come from a health sciences background, I'm working hard to transition into web development. Above all else, I love learning new things, and there is certainly no shortage of that in the development world. My learning is currently taking place at Lambda School.<br></br><br></br> I find it so satisfying to have a problem, research the solution, then be able to immediately apply my new knowledge to fix a problem I couldn't solve 5 minutes ago. When not developing, I can be found playing trumpet in my community band, or frolicking in the snow. 
+                        <Typography component="p" style={{textAlign: "left"}}><br></br>I come from a pre-med background (holding a B.S. in Health Sciences), currently working hard to transition into web development. Above all else, I love learning new things, and there is certainly no shortage of that in the development world. My learning is currently taking place at Lambda School, where I am also employed as a Team Lead.<br></br><br></br> I find it so satisfying to have a problem, research the solution, then be able to immediately apply my new knowledge to fix a problem I couldn't solve 5 minutes ago. When not developing, I can be found playing trumpet in my community band, or frolicking in the snow. 
                         </Typography>
                         <IconDiv>
                             <a href="https://www.linkedin.com/in/alexander-sierra-b7519673/" target="_blank"><Icon className="fab fa-linkedin"></Icon></a>

@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav setValue = {setValue} value = {value}/>
+      <Nav setValue={setValue} value={value}/>
       {/* {value === 0 && <Home />}
       {value === 1 && <Skills />}
       {value === 2 && <Projects />}
@@ -26,7 +26,7 @@ function App() {
       <Route path="/projects" component={Projects}/>
       <Route path="/contact" component={Contact}/>
       <div>
-        <Footer />
+        <Footer setValue={setValue} value={value}/>
       </div>
       
       
