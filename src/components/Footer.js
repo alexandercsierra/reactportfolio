@@ -62,6 +62,7 @@ export default function Footer(props) {
 
      const handleChange = (event, newValue) => {
         setValue(newValue);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     return (

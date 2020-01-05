@@ -16,15 +16,16 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faHtml5, faCss3Alt, faJs, faReact, faGithubSquare} from '@fortawesome/free-brands-svg-icons'
-import {faCube} from '@fortawesome/free-solid-svg-icons'
+import {faCube, faLink} from '@fortawesome/free-solid-svg-icons'
 import { dom } from '@fortawesome/fontawesome-svg-core'
 dom.watch()
 
+{/* <i class="fas fa-link"></i> */}
  
-library.add(faHtml5, faCss3Alt, faJs, faCube, faReact)
+library.add(faHtml5, faCss3Alt, faJs, faCube, faReact, faLink)
 
 let Icon = styled.svg`
     font-size: 3rem;
@@ -94,12 +95,19 @@ export default function Projects(props) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="github repository link">
           {/* <FavoriteIcon /> */}
           {/* <Icon className="fab fa-html5" style={{color: "#df4b25"}}></Icon>
           <Icon className="fab fa-css3-alt" style={{color: "#1e5fa9"}}></Icon>
           <Icon className="fab fa-js" style={{color: "#e9d54d"}}></Icon> */}
           <a href={repo} target="_blank"><Icon className="fab fa-github-square"  style={{color: "#24292e"}}></Icon></a>
+        </IconButton>
+        <IconButton aria-label="link to deployed site">
+          {/* <FavoriteIcon /> */}
+          {/* <Icon className="fab fa-html5" style={{color: "#df4b25"}}></Icon>
+          <Icon className="fab fa-css3-alt" style={{color: "#1e5fa9"}}></Icon>
+          <Icon className="fab fa-js" style={{color: "#e9d54d"}}></Icon> */}
+          <a href={url} target="_blank"><Icon className="fas fa-link"  style={{color: "#24292e"}}></Icon></a>
         </IconButton>
         {/* <IconButton aria-label="share">
           <ShareIcon />

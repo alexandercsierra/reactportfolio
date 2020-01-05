@@ -8,6 +8,7 @@ import cities from "./imgs/cities.png";
 import Carousel from "./Carousel"
 import heroku from "./imgs/heroku.png";
 import zingers from "./imgs/zingers.png"
+import holiday from "./imgs/holiday.png"
 
 
 let CardDiv = styled.div`
@@ -33,13 +34,13 @@ let obj = {
         repo: "https://github.com/alexandercsierra/planetary-weights",
         url: "https://alexandercsierra.github.io/planets/index.html"
     },
-    rps: {
-        letter: "R",
-        title: "Rock Paper Scissors",
-        image: rps,
-        desc: "Choose from rock, paper, or scissors and play to win against the computer.",
-        repo: "https://github.com/alexandercsierra/rpsgame",
-        url: "https://alexandercsierra.github.io/rockpaperscissors/rpsgame.html"
+    holiday: {
+        letter: "H",
+        title: "Holiday Postcards",
+        image: holiday,
+        desc: "A project that allows for viewing holiday-themed postcards with a video message. Created using React",
+        repo: "https://github.com/alexandercsierra/holidayPostcards",
+        url: "https://alexandercsierra.github.io/holidayPostcards/#/"
     },
     bookr: {
         letter: "O",
@@ -72,7 +73,16 @@ let obj = {
         desc: "A web app built in React, which will pull quotes from the Golden Girls API and display them in cards",
         repo: "https://github.com/alexandercsierra/zbornakzingersreact",
         url: "https://zbornakzingers.netlify.com/"
+    },
+    rps: {
+        letter: "R",
+        title: "Rock Paper Scissors",
+        image: rps,
+        desc: "Choose from rock, paper, or scissors and play to win against the computer.",
+        repo: "https://github.com/alexandercsierra/rpsgame",
+        url: "https://alexandercsierra.github.io/rockpaperscissors/rpsgame.html"
     }
+    
 
 }
 

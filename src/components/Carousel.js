@@ -81,8 +81,14 @@ const items = [
 ];
 
 const CaroDiv = styled.div`
-    margin: 4%;
+    margin: 4% auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
     // background: black;
+    @media (max-width: 750px){
+      width: 85%;
+    }
 `;
 
 const Link = styled.a`
@@ -127,7 +133,7 @@ const Carousel2= (props) => {
 
   return (
     <div>
-      <Link href="https://www.artstation.com/alexandercsierra" target="_blank"><h1>3D Models</h1></Link>
+      <h1 style={{marginTop: "8%"}}>3D Models</h1>
       <CaroDiv>
           <Carousel
           activeIndex={activeIndex}
@@ -141,7 +147,7 @@ const Carousel2= (props) => {
           <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
           </Carousel>
       </CaroDiv>
-      <Link href="https://www.artstation.com/alexandercsierra" target="_blank">Artstation Profile</Link>
+      <Link href="https://www.artstation.com/alexandercsierra" target="_blank">Visit my Artstation Profile</Link>
     </div>
   );
 }
