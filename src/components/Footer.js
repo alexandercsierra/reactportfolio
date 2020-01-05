@@ -14,19 +14,28 @@ dom.watch()
  
 library.add(faHtml5, faCss3Alt, faJs, faCube, faReact)
 
+const FooterContainer = styled.div`
+    margin-top: 20%;
+    margin-bottom: 0;
+`;
+
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
     marginTop: "20%",
-    ['@media (max-width:650px)']: { // eslint-disable-line no-useless-computed-key
-        marginTop: "80%"
-    },
-    ['@media (max-width:450px)']: { // eslint-disable-line no-useless-computed-key
-        marginTop: "110%"
-    },
-    ['@media (max-width:270px)']: { // eslint-disable-line no-useless-computed-key
-        marginTop: "200%"
-    }
+    position: "relative",
+    bottom: 0,
+    width: "100%",
+    // ['@media (max-width:650px)']: { // eslint-disable-line no-useless-computed-key
+    //     marginTop: "80%"
+    // },
+    // ['@media (max-width:450px)']: { // eslint-disable-line no-useless-computed-key
+    //     marginTop: "110%"
+    // },
+    // ['@media (max-width:270px)']: { // eslint-disable-line no-useless-computed-key
+    //     marginTop: "200px",
+    //     marginBottom: "0"
+    // }
   },
 });
 
@@ -39,7 +48,8 @@ export default function Footer(props) {
     };
 
     return (
-        <Paper className={classes.root}>
+        <FooterContainer>
+            <Paper className={classes.root}>
         <Tabs
             style={{padding: "3%", background: "black", color: "white"}}
             // value={value}
@@ -62,5 +72,7 @@ export default function Footer(props) {
                 label="Contact" /> */}
         </Tabs>
         </Paper>
+        </FooterContainer>
+        
     );
 }

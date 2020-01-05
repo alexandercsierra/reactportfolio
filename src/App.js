@@ -25,7 +25,10 @@ function App() {
       <Route path="/skills" component={Skills}/>
       <Route path="/projects" component={Projects}/>
       <Route path="/contact" component={Contact}/>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
+      
       
       
     </div>

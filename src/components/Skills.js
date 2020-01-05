@@ -16,6 +16,14 @@ let Icon = styled.svg`
     color: dodgerblue;
 `;
 
+let Image = styled.img`
+    // width: 90px;
+    // width: 38%;
+    width: 5rem;
+    margin-top: -.05%;
+    margin-bottom: 5%;
+`;
+
 let SkillsContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -23,6 +31,9 @@ let SkillsContainer = styled.div`
     height: 60vh;
     width: 70%;
     margin: 0 auto;
+    @media (max-width: 560px){
+        width: 90%;
+    }
     
 `;
 
@@ -33,13 +44,23 @@ let SkillDiv = styled.div`
         width: 30%;
     };
     @media (max-width: 650px){
-        width: 50%
-    }
+        width: 30%
+    };
+    // @media (max-width: 650px){
+    //     width: 50%
+    // };
 `;
 
 let Title = styled.h1`
     margin: 4% auto;
 `;
+
+let SkillTitle=styled.h2`
+    @media (max-width: 720px){
+        font-size: 1rem;
+    }
+`;
+
 
 let Container = styled.h1`
     margin: 4% auto;
@@ -52,29 +73,30 @@ const Skills = () => {
             <Title>Skills</Title>
             <SkillsContainer>
                 <SkillDiv>
-                    <h2>HTML5</h2>
+                    <SkillTitle>HTML5</SkillTitle>
                     <Icon className="fab fa-html5" style={{color: "#df4b25"}}></Icon>
                 </SkillDiv>
                 <SkillDiv>
-                    <h2>CSS3</h2>
+                    <SkillTitle>CSS3</SkillTitle>
                     <Icon className="fab fa-css3-alt" style={{color: "#1e5fa9"}}></Icon>
                 </SkillDiv>
                 <SkillDiv>
-                    <h2>Less</h2>
+                    <SkillTitle>Less</SkillTitle>
                     <Icon className="fab fa-less" style={{color: "#1d365d"}}></Icon>
                 </SkillDiv>
                 <SkillDiv>
-                    <h2>JavaScript</h2>
+                    <SkillTitle>JavaScript</SkillTitle>
                     <Icon className="fab fa-js" style={{color: "#e9d54d"}}></Icon>
                 </SkillDiv>
                 <SkillDiv>
-                    <h2>React</h2>
+                    <SkillTitle>React</SkillTitle>
                     <Icon className="fab fa-react" style={{color: "#00d8ff"}}></Icon>
                 </SkillDiv>
                 <SkillDiv>
-                    <h2>Blender</h2>
+                    <SkillTitle>Blender</SkillTitle>
                     {/* <Icon className="fas fa-cube" style={{color: "#39ad60"}}></Icon> */}
-                    <img src={blender} style={{width: "90px", marginTop: "-5px"}}></img>
+                    {/* <img src={blender} style={{width: "90px", marginTop: "-5px", marginBottom: "5%"}}></img> */}
+                    <Image src={blender}></Image>
                 </SkillDiv>
             </SkillsContainer>
         </Container>
