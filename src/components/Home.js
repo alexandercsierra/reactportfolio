@@ -72,7 +72,7 @@ const AboutDiv = styled.div`
 `;
 
 const Profile = styled.img`
-    width: 100%;
+    // width: 100%;
 `;
 
 const ProfileDiv = styled.div`
@@ -81,6 +81,7 @@ const ProfileDiv = styled.div`
     @media (max-width: 1100px){
         width: 50%; 
      }
+     
 `;
 
 const TextDiv = styled.div`
@@ -136,7 +137,6 @@ const useStyles = makeStyles(theme => ({
       }
     },
   }));
-  
 
 
 
