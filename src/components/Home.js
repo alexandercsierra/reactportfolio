@@ -84,6 +84,7 @@ const Profile = styled.img`
 const ProfileDiv = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 40%;
     @media (max-width: 1100px){
         width: 50%; 
