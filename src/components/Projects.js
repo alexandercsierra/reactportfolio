@@ -57,7 +57,8 @@ let obj = {
         image: char,
         desc: "Helped to create a more stream-lined Myers-Briggs-esque personality test as part of a hackathon team",
         repo: "https://github.com/Myers-Briggs-for-Millennials/Frontend",
-        url: "https://characteristiq.now.sh/"
+        url: "https://characteristiq.now.sh/",
+        video: "https://www.youtube.com/watch?v=2gU_upDqM34&feature=youtu.be"
     },
     ggapi: {
         letter: "G",
@@ -100,7 +101,7 @@ let arr = Object.values(obj);
 
 
 let cards = arr.map(proj => {
-    return(<Card style = {{margin: "4%"}} letter = {proj.letter} title = {proj.title} img={proj.image} desc = {proj.desc} key={proj.title} url={proj.url} repo = {proj.repo}/>)
+    return(<Card style = {{margin: "4%"}} letter = {proj.letter} title = {proj.title} img={proj.image} desc = {proj.desc} key={proj.title} url={proj.url} repo = {proj.repo} video={proj.video}/>)
 })
 
     return (

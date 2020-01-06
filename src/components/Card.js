@@ -18,14 +18,15 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import styled from 'styled-components';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faHtml5, faCss3Alt, faJs, faReact, faGithubSquare} from '@fortawesome/free-brands-svg-icons'
+import { fab, faHtml5, faCss3Alt, faJs, faReact, faGithubSquare, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import {faCube, faLink} from '@fortawesome/free-solid-svg-icons'
 import { dom } from '@fortawesome/fontawesome-svg-core'
 dom.watch()
 
 {/* <i class="fas fa-link"></i> */}
+{/* <i class="fab fa-youtube"></i> */}
  
-library.add(faHtml5, faCss3Alt, faJs, faCube, faReact, faLink)
+library.add(faHtml5, faCss3Alt, faJs, faCube, faReact, faLink, faYoutube)
 
 let Icon = styled.svg`
     font-size: 3rem;
@@ -59,7 +60,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function Projects(props) {
-  const {title, img, desc, letter, url, repo} = props;
+  const {title, img, desc, letter, url, repo, video} = props;
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -110,6 +111,13 @@ export default function Projects(props) {
           <Icon className="fab fa-js" style={{color: "#e9d54d"}}></Icon> */}
           <a href={url} target="_blank"><Icon className="fas fa-link"  style={{color: "#24292e"}}></Icon></a>
         </IconButton>
+        {title === "Characteristiq" && <IconButton aria-label="link to deployed site">
+          {/* <FavoriteIcon /> */}
+          {/* <Icon className="fab fa-html5" style={{color: "#df4b25"}}></Icon>
+          <Icon className="fab fa-css3-alt" style={{color: "#1e5fa9"}}></Icon>
+          <Icon className="fab fa-js" style={{color: "#e9d54d"}}></Icon> */}
+          <a href={video} target="_blank"><Icon className="fab fa-youtube"  style={{color: "#24292e"}}></Icon></a>
+        </IconButton>}
         {/* <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
