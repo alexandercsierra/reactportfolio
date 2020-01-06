@@ -192,7 +192,7 @@ const Home = () => {
                 {/* </Paper> */}
             </AboutDiv>
             {/*hide under 870px */}
-            {width > 870 && <Calendar name="alexandercsierra"/>}
+            {width > 870 && <Calendar style={{width: "90%"}}name="alexandercsierra"/>}
             {console.log(window.innerWidth)}
         </Container>
     )
