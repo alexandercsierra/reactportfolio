@@ -9,6 +9,7 @@ import Carousel from "./Carousel"
 import heroku from "./imgs/heroku.png";
 import zingers from "./imgs/zingers.png"
 import holiday from "./imgs/holiday.png"
+import char from "./imgs/char.png"
 
 
 let CardDiv = styled.div`
@@ -42,14 +43,6 @@ let obj = {
         repo: "https://github.com/alexandercsierra/holidayPostcards",
         url: "https://alexandercsierra.github.io/holidayPostcards/#/"
     },
-    bookr: {
-        letter: "O",
-        title: "OER Bookr",
-        image: bookr,
-        desc: "Marketing and About Us page for OER Bookr, a source for open source textbooks",
-        repo: "https://github.com/Build-Week-Team-OERBookr/UI",
-        url: "https://oerbookr2019.netlify.com/"
-    },
     cities: {
         letter: "C",
         title: "Cities by Consonants",
@@ -57,6 +50,14 @@ let obj = {
         desc: "Users try to guess which states contain a city which shares the same consonants as it's state name.",
         repo: "https://github.com/alexandercsierra/citiesByConsonant",
         url: "https://alexandercsierra.github.io/cities/index.html"
+    },
+    characteristiq: {
+        letter: "C",
+        title: "Characteristiq",
+        image: char,
+        desc: "Helped to create a more stream-lined Myers-Briggs-esque personality test as part of a hackathon team",
+        repo: "https://github.com/Myers-Briggs-for-Millennials/Frontend",
+        url: "https://characteristiq.now.sh/"
     },
     ggapi: {
         letter: "G",
@@ -73,6 +74,14 @@ let obj = {
         desc: "A web app built in React, which will pull quotes from the Golden Girls API and display them in cards",
         repo: "https://github.com/alexandercsierra/zbornakzingersreact",
         url: "https://zbornakzingers.netlify.com/"
+    },
+    bookr: {
+        letter: "O",
+        title: "OER Bookr",
+        image: bookr,
+        desc: "Marketing and About Us page for OER Bookr, a source for open source textbooks",
+        repo: "https://github.com/Build-Week-Team-OERBookr/UI",
+        url: "https://oerbookr2019.netlify.com/"
     },
     rps: {
         letter: "R",
