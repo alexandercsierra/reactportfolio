@@ -55,7 +55,7 @@ let obj = {
         letter: "C",
         title: "Characteristiq",
         image: char,
-        desc: "Helped to create a more stream-lined Myers-Briggs-esque personality test as part of a hackathon team",
+        desc: "A more stream-lined Myers-Briggs-esque personality test. Contributed as part of a hackathon team. I also edited and narrated our marketing video",
         repo: "https://github.com/Myers-Briggs-for-Millennials/Frontend",
         url: "https://characteristiq.now.sh/",
         video: "https://www.youtube.com/watch?v=2gU_upDqM34&feature=youtu.be"

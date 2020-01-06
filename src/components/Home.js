@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import img from "./imgs/appledark.jpg"
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,6 +11,7 @@ import { fab, faLinkedin, faGithubSquare} from '@fortawesome/free-brands-svg-ico
 import {faCube} from '@fortawesome/free-solid-svg-icons'
 import { dom } from '@fortawesome/fontawesome-svg-core'
 import { isWidthDown } from '@material-ui/core';
+import Calendar from './Calendar'
 dom.watch()
 
 library.add(faLinkedin, faGithubSquare)
@@ -150,6 +151,10 @@ let Container = styled.div`
 
 const Home = () => {
     // const classes = useStyles();
+    const [width, setWidth] = useState("");
+    useEffect(()=>{
+        setWidth(window.innerWidth)
+    }, [width])
     return (
         <Container>
             <Banner>
@@ -186,6 +191,9 @@ const Home = () => {
                     </TextDiv> */}
                 {/* </Paper> */}
             </AboutDiv>
+            {/*hide under 870px */}
+            {width > 870 && <Calendar name="alexandercsierra"/>}
+            {console.log(window.innerWidth)}
         </Container>
     )
 }
