@@ -10,6 +10,7 @@ import heroku from "./imgs/heroku.png";
 import zingers from "./imgs/zingers.png"
 import holiday from "./imgs/holiday.png"
 import char from "./imgs/char.png"
+import pug from "./imgs/thepug.png"
 
 
 let CardDiv = styled.div`
@@ -75,6 +76,14 @@ let obj = {
         desc: "A web app built in React, which will pull quotes from the Golden Girls API and display them in cards",
         repo: "https://github.com/alexandercsierra/zbornakzingersreact",
         url: "https://zbornakzingers.netlify.com/"
+    },
+    gifs: {
+        letter: "S",
+        title: "Sad Pug Gifs",
+        image: pug,
+        desc: "Random gif generator built with React and Redux",
+        repo: "https://github.com/alexandercsierra/React-Redux-App/tree/alexander-sierra",
+        url: "https://react-redux-app-bbqz03ky6.now.sh/"
     },
     bookr: {
         letter: "O",
